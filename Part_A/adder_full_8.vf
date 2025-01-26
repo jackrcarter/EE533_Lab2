@@ -1,0 +1,215 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 10.1
+//  \   \         Application : sch2verilog
+//  /   /         Filename : adder_full_8.vf
+// /___/   /\     Timestamp : 01/23/2025 20:37:31
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\sch2verilog.exe -intstyle ise -family spartan3a -w "C:/Documents and Settings/student/Desktop/EE533_Lab2/adder_full_8/adder_full_8/adder_full_8.sch" adder_full_8.vf
+//Design Name: adder_full_8
+//Device: spartan3a
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module adder_full_8(a, 
+                    b, 
+                    cin, 
+                    clk, 
+                    cout, 
+                    sum);
+
+    input [7:0] a;
+    input [7:0] b;
+    input cin;
+    input clk;
+   output cout;
+   output [7:0] sum;
+   
+   wire XLXN_36;
+   wire XLXN_38;
+   wire XLXN_39;
+   wire XLXN_40;
+   wire XLXN_43;
+   wire XLXN_44;
+   wire XLXN_45;
+   wire XLXN_46;
+   wire XLXN_47;
+   wire XLXN_48;
+   wire XLXN_59;
+   wire XLXN_60;
+   wire XLXN_61;
+   wire XLXN_62;
+   wire XLXN_63;
+   wire XLXN_64;
+   wire XLXN_65;
+   wire XLXN_66;
+   wire XLXN_67;
+   wire XLXN_68;
+   wire XLXN_71;
+   wire XLXN_72;
+   wire XLXN_168;
+   wire XLXN_169;
+   wire XLXN_233;
+   wire XLXN_234;
+   wire XLXN_235;
+   wire XLXN_236;
+   wire XLXN_237;
+   wire XLXN_238;
+   wire XLXN_239;
+   wire XLXN_240;
+   wire XLXN_241;
+   
+   FD XLXI_16 (.C(clk), 
+               .D(cin), 
+               .Q(XLXN_36));
+   defparam XLXI_16.INIT = 1'b0;
+   FD XLXI_17 (.C(clk), 
+               .D(a[0]), 
+               .Q(XLXN_38));
+   defparam XLXI_17.INIT = 1'b0;
+   FD XLXI_18 (.C(clk), 
+               .D(b[0]), 
+               .Q(XLXN_39));
+   defparam XLXI_18.INIT = 1'b0;
+   FD XLXI_25 (.C(clk), 
+               .D(b[1]), 
+               .Q(XLXN_60));
+   defparam XLXI_25.INIT = 1'b0;
+   FD XLXI_26 (.C(clk), 
+               .D(a[2]), 
+               .Q(XLXN_61));
+   defparam XLXI_26.INIT = 1'b0;
+   FD XLXI_27 (.C(clk), 
+               .D(b[2]), 
+               .Q(XLXN_62));
+   defparam XLXI_27.INIT = 1'b0;
+   FD XLXI_28 (.C(clk), 
+               .D(a[1]), 
+               .Q(XLXN_59));
+   defparam XLXI_28.INIT = 1'b0;
+   adder_full_1 XLXI_37 (.a(XLXN_38), 
+                         .b(XLXN_39), 
+                         .cin(XLXN_36), 
+                         .cout(XLXN_47), 
+                         .sum(XLXN_240));
+   adder_full_1 XLXI_38 (.a(XLXN_59), 
+                         .b(XLXN_60), 
+                         .cin(XLXN_47), 
+                         .cout(XLXN_48), 
+                         .sum(XLXN_239));
+   adder_full_1 XLXI_39 (.a(XLXN_61), 
+                         .b(XLXN_62), 
+                         .cin(XLXN_48), 
+                         .cout(XLXN_40), 
+                         .sum(XLXN_241));
+   adder_full_1 XLXI_43 (.a(XLXN_63), 
+                         .b(XLXN_64), 
+                         .cin(XLXN_40), 
+                         .cout(XLXN_43), 
+                         .sum(XLXN_238));
+   adder_full_1 XLXI_44 (.a(XLXN_65), 
+                         .b(XLXN_66), 
+                         .cin(XLXN_43), 
+                         .cout(XLXN_44), 
+                         .sum(XLXN_236));
+   adder_full_1 XLXI_45 (.a(XLXN_67), 
+                         .b(XLXN_68), 
+                         .cin(XLXN_44), 
+                         .cout(XLXN_45), 
+                         .sum(XLXN_237));
+   adder_full_1 XLXI_46 (.a(XLXN_71), 
+                         .b(XLXN_72), 
+                         .cin(XLXN_45), 
+                         .cout(XLXN_46), 
+                         .sum(XLXN_235));
+   FD XLXI_73 (.C(clk), 
+               .D(a[3]), 
+               .Q(XLXN_63));
+   defparam XLXI_73.INIT = 1'b0;
+   FD XLXI_74 (.C(clk), 
+               .D(b[3]), 
+               .Q(XLXN_64));
+   defparam XLXI_74.INIT = 1'b0;
+   FD XLXI_75 (.C(clk), 
+               .D(a[4]), 
+               .Q(XLXN_65));
+   defparam XLXI_75.INIT = 1'b0;
+   FD XLXI_76 (.C(clk), 
+               .D(b[4]), 
+               .Q(XLXN_66));
+   defparam XLXI_76.INIT = 1'b0;
+   FD XLXI_79 (.C(clk), 
+               .D(a[5]), 
+               .Q(XLXN_67));
+   defparam XLXI_79.INIT = 1'b0;
+   FD XLXI_80 (.C(clk), 
+               .D(b[5]), 
+               .Q(XLXN_68));
+   defparam XLXI_80.INIT = 1'b0;
+   FD XLXI_95 (.C(clk), 
+               .D(a[6]), 
+               .Q(XLXN_71));
+   defparam XLXI_95.INIT = 1'b0;
+   FD XLXI_96 (.C(clk), 
+               .D(b[6]), 
+               .Q(XLXN_72));
+   defparam XLXI_96.INIT = 1'b0;
+   FD XLXI_97 (.C(clk), 
+               .D(a[7]), 
+               .Q(XLXN_168));
+   defparam XLXI_97.INIT = 1'b0;
+   FD XLXI_114 (.C(clk), 
+                .D(b[7]), 
+                .Q(XLXN_169));
+   defparam XLXI_114.INIT = 1'b0;
+   adder_full_1 XLXI_115 (.a(XLXN_168), 
+                          .b(XLXN_169), 
+                          .cin(XLXN_46), 
+                          .cout(XLXN_233), 
+                          .sum(XLXN_234));
+   FD XLXI_116 (.C(clk), 
+                .D(XLXN_233), 
+                .Q(cout));
+   defparam XLXI_116.INIT = 1'b0;
+   FD XLXI_117 (.C(clk), 
+                .D(XLXN_235), 
+                .Q(sum[6]));
+   defparam XLXI_117.INIT = 1'b0;
+   FD XLXI_118 (.C(clk), 
+                .D(XLXN_237), 
+                .Q(sum[5]));
+   defparam XLXI_118.INIT = 1'b0;
+   FD XLXI_119 (.C(clk), 
+                .D(XLXN_236), 
+                .Q(sum[4]));
+   defparam XLXI_119.INIT = 1'b0;
+   FD XLXI_120 (.C(clk), 
+                .D(XLXN_238), 
+                .Q(sum[3]));
+   defparam XLXI_120.INIT = 1'b0;
+   FD XLXI_121 (.C(clk), 
+                .D(XLXN_241), 
+                .Q(sum[2]));
+   defparam XLXI_121.INIT = 1'b0;
+   FD XLXI_122 (.C(clk), 
+                .D(XLXN_240), 
+                .Q(sum[0]));
+   defparam XLXI_122.INIT = 1'b0;
+   FD XLXI_123 (.C(clk), 
+                .D(XLXN_239), 
+                .Q(sum[1]));
+   defparam XLXI_123.INIT = 1'b0;
+   FD XLXI_124 (.C(clk), 
+                .D(XLXN_234), 
+                .Q(sum[7]));
+   defparam XLXI_124.INIT = 1'b0;
+endmodule
