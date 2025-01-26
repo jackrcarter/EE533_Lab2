@@ -11,26 +11,9 @@ BEGIN SCHEMATIC
         SIGNAL cin
         SIGNAL sum
         SIGNAL cout
-        SIGNAL XLXN_7
-        SIGNAL XLXN_9
-        SIGNAL XLXN_10
         SIGNAL XLXN_13
         SIGNAL XLXN_14
-        SIGNAL XLXN_15
-        SIGNAL XLXN_16
-        SIGNAL XLXN_17
-        SIGNAL XLXN_18
-        SIGNAL XLXN_19
-        SIGNAL XLXN_20
-        SIGNAL XLXN_22
-        SIGNAL XLXN_23
         SIGNAL XLXN_24
-        SIGNAL XLXN_25
-        SIGNAL XLXN_32
-        SIGNAL XLXN_33
-        SIGNAL XLXN_34
-        SIGNAL XLXN_35
-        SIGNAL XLXN_36
         PORT Input a
         PORT Input b
         PORT Input cin

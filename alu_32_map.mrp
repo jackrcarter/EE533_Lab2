@@ -1,0 +1,458 @@
+Release 10.1 Map K.31 (nt)
+Xilinx Mapping Report File for Design 'alu_32'
+
+Design Information
+------------------
+Command Line   : map -ise "C:/Documents and
+Settings/student/Desktop/EE533_Lab2/alu_32/alu_32.ise" -intstyle ise -p
+xc3s700a-fg484-4 -cm area -pr off -k 4 -c 100 -o alu_32_map.ncd alu_32.ngd
+alu_32.pcf 
+Target Device  : xc3s700a
+Target Package : fg484
+Target Speed   : -4
+Mapper Version : spartan3a -- $Revision: 1.46 $
+Mapped Date    : Sat Jan 25 21:19:21 2025
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of 4 input LUTs:               328 out of  11,776    2%
+Logic Distribution:
+  Number of occupied Slices:            171 out of   5,888    2%
+    Number of Slices containing only related logic:     171 out of     171 100%
+    Number of Slices containing unrelated logic:          0 out of     171   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         328 out of  11,776    2%
+  Number of bonded IOBs:                104 out of     372   27%
+
+Peak Memory Usage:  158 MB
+Total REAL time to MAP completion:  6 secs 
+Total CPU time to MAP completion:   5 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+Section 12 - Configuration String Information
+Section 13 - Control Set Information
+Section 14 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+
+Section 5 - Removed Logic
+-------------------------
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard | Drive    | Slew    | Reg (s)      | Resistor | IBUF/IFD | SUSPEND          |
+|                                    |                  |           |             | Strength | Rate    |              |          | Delay    |                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| a<0>                               | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<1>                               | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<2>                               | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<3>                               | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<4>                               | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<5>                               | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<6>                               | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<7>                               | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<8>                               | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<9>                               | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<10>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<11>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<12>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<13>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<14>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<15>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<16>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<17>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<18>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<19>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<20>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<21>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<22>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<23>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<24>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<25>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<26>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<27>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<28>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<29>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<30>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| a<31>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<0>                               | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<1>                               | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<2>                               | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<3>                               | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<4>                               | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<5>                               | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<6>                               | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<7>                               | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<8>                               | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<9>                               | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<10>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<11>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<12>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<13>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<14>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<15>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<16>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<17>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<18>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<19>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<20>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<21>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<22>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<23>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<24>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<25>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<26>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<27>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<28>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<29>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<30>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| b<31>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| c<0>                               | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<1>                               | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<2>                               | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<3>                               | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<4>                               | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<5>                               | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<6>                               | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<7>                               | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<8>                               | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<9>                               | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<10>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<11>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<12>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<13>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<14>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<15>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<16>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<17>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<18>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<19>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<20>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<21>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<22>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<23>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<24>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<25>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<26>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<27>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<28>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<29>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<30>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| c<31>                              | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| cin                                | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| cout                               | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| en                                 | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| eq                                 | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| neg                                | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| op<0>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| op<1>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| op<2>                              | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 13 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 14 - Utilization by Hierarchy
+-------------------------------------
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module             | Partition | Slices        | Slice Reg     | LUTs          | LUTRAM        | BRAM      | MULT18X18 | BUFG  | DCM   | Full Hierarchical Name         |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| alu_32/            |           | 2/324         | 0/0           | 2/328         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32                         |
+| +XLXI_1            |           | 0/64          | 0/0           | 0/64          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1                  |
+| ++XLXI_1           |           | 0/16          | 0/0           | 0/16          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_1           |
+| +++XLXI_10         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_1/XLXI_10   |
+| +++XLXI_11         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_1/XLXI_11   |
+| +++XLXI_12         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_1/XLXI_12   |
+| +++XLXI_5          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_1/XLXI_5    |
+| +++XLXI_6          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_1/XLXI_6    |
+| +++XLXI_7          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_1/XLXI_7    |
+| +++XLXI_8          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_1/XLXI_8    |
+| +++XLXI_9          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_1/XLXI_9    |
+| ++XLXI_10          |           | 0/16          | 0/0           | 0/16          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_10          |
+| +++XLXI_10         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_10/XLXI_10  |
+| +++XLXI_11         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_10/XLXI_11  |
+| +++XLXI_12         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_10/XLXI_12  |
+| +++XLXI_5          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_10/XLXI_5   |
+| +++XLXI_6          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_10/XLXI_6   |
+| +++XLXI_7          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_10/XLXI_7   |
+| +++XLXI_8          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_10/XLXI_8   |
+| +++XLXI_9          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_10/XLXI_9   |
+| ++XLXI_2           |           | 0/16          | 0/0           | 0/16          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_2           |
+| +++XLXI_10         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_2/XLXI_10   |
+| +++XLXI_11         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_2/XLXI_11   |
+| +++XLXI_12         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_2/XLXI_12   |
+| +++XLXI_5          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_2/XLXI_5    |
+| +++XLXI_6          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_2/XLXI_6    |
+| +++XLXI_7          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_2/XLXI_7    |
+| +++XLXI_8          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_2/XLXI_8    |
+| +++XLXI_9          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_2/XLXI_9    |
+| ++XLXI_3           |           | 0/16          | 0/0           | 0/16          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_3           |
+| +++XLXI_10         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_3/XLXI_10   |
+| +++XLXI_11         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_3/XLXI_11   |
+| +++XLXI_12         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_3/XLXI_12   |
+| +++XLXI_5          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_3/XLXI_5    |
+| +++XLXI_6          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_3/XLXI_6    |
+| +++XLXI_7          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_3/XLXI_7    |
+| +++XLXI_8          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_3/XLXI_8    |
+| +++XLXI_9          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_1/XLXI_3/XLXI_9    |
+| +XLXI_18           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_18                 |
+| +XLXI_2            |           | 0/32          | 0/0           | 0/32          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_2                  |
+| ++XLXI_1           |           | 8/8           | 0/0           | 8/8           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_2/XLXI_1           |
+| ++XLXI_2           |           | 8/8           | 0/0           | 8/8           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_2/XLXI_2           |
+| ++XLXI_3           |           | 8/8           | 0/0           | 8/8           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_2/XLXI_3           |
+| ++XLXI_4           |           | 8/8           | 0/0           | 8/8           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_2/XLXI_4           |
+| +XLXI_20           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_20                 |
+| +XLXI_23           |           | 0/96          | 0/0           | 0/96          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23                 |
+| ++XLXI_1           |           | 0/32          | 0/0           | 0/32          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1          |
+| +++XLXI_1          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_1   |
+| +++XLXI_10         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_10  |
+| +++XLXI_101        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_101 |
+| +++XLXI_102        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_102 |
+| +++XLXI_103        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_103 |
+| +++XLXI_104        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_104 |
+| +++XLXI_105        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_105 |
+| +++XLXI_106        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_106 |
+| +++XLXI_107        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_107 |
+| +++XLXI_108        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_108 |
+| +++XLXI_109        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_109 |
+| +++XLXI_110        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_110 |
+| +++XLXI_111        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_111 |
+| +++XLXI_112        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_112 |
+| +++XLXI_113        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_113 |
+| +++XLXI_114        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_114 |
+| +++XLXI_115        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_115 |
+| +++XLXI_116        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_116 |
+| +++XLXI_14         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_14  |
+| +++XLXI_15         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_15  |
+| +++XLXI_16         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_16  |
+| +++XLXI_17         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_17  |
+| +++XLXI_18         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_18  |
+| +++XLXI_19         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_19  |
+| +++XLXI_2          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_2   |
+| +++XLXI_20         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_20  |
+| +++XLXI_21         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_21  |
+| +++XLXI_3          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_3   |
+| +++XLXI_4          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_4   |
+| +++XLXI_7          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_7   |
+| +++XLXI_8          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_8   |
+| +++XLXI_9          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_1/XLXI_9   |
+| ++XLXI_2           |           | 0/32          | 0/0           | 0/32          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2          |
+| +++XLXI_1          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_1   |
+| +++XLXI_10         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_10  |
+| +++XLXI_101        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_101 |
+| +++XLXI_102        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_102 |
+| +++XLXI_103        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_103 |
+| +++XLXI_104        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_104 |
+| +++XLXI_105        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_105 |
+| +++XLXI_106        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_106 |
+| +++XLXI_107        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_107 |
+| +++XLXI_108        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_108 |
+| +++XLXI_109        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_109 |
+| +++XLXI_110        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_110 |
+| +++XLXI_111        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_111 |
+| +++XLXI_112        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_112 |
+| +++XLXI_113        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_113 |
+| +++XLXI_114        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_114 |
+| +++XLXI_115        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_115 |
+| +++XLXI_116        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_116 |
+| +++XLXI_14         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_14  |
+| +++XLXI_15         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_15  |
+| +++XLXI_16         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_16  |
+| +++XLXI_17         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_17  |
+| +++XLXI_18         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_18  |
+| +++XLXI_19         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_19  |
+| +++XLXI_2          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_2   |
+| +++XLXI_20         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_20  |
+| +++XLXI_21         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_21  |
+| +++XLXI_3          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_3   |
+| +++XLXI_4          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_4   |
+| +++XLXI_7          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_7   |
+| +++XLXI_8          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_8   |
+| +++XLXI_9          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_2/XLXI_9   |
+| ++XLXI_4           |           | 0/32          | 0/0           | 0/32          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4          |
+| +++XLXI_1          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_1   |
+| +++XLXI_10         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_10  |
+| +++XLXI_101        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_101 |
+| +++XLXI_102        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_102 |
+| +++XLXI_103        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_103 |
+| +++XLXI_104        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_104 |
+| +++XLXI_105        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_105 |
+| +++XLXI_106        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_106 |
+| +++XLXI_107        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_107 |
+| +++XLXI_108        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_108 |
+| +++XLXI_109        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_109 |
+| +++XLXI_110        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_110 |
+| +++XLXI_111        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_111 |
+| +++XLXI_112        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_112 |
+| +++XLXI_113        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_113 |
+| +++XLXI_114        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_114 |
+| +++XLXI_115        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_115 |
+| +++XLXI_116        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_116 |
+| +++XLXI_14         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_14  |
+| +++XLXI_15         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_15  |
+| +++XLXI_16         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_16  |
+| +++XLXI_17         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_17  |
+| +++XLXI_18         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_18  |
+| +++XLXI_19         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_19  |
+| +++XLXI_2          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_2   |
+| +++XLXI_20         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_20  |
+| +++XLXI_21         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_21  |
+| +++XLXI_3          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_3   |
+| +++XLXI_4          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_4   |
+| +++XLXI_7          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_7   |
+| +++XLXI_8          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_8   |
+| +++XLXI_9          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_23/XLXI_4/XLXI_9   |
+| +XLXI_3            |           | 0/64          | 0/0           | 0/64          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3                  |
+| ++XLXI_10          |           | 0/16          | 0/0           | 0/16          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_10          |
+| +++XLXI_2          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_10/XLXI_2   |
+| +++XLXI_3          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_10/XLXI_3   |
+| +++XLXI_4          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_10/XLXI_4   |
+| +++XLXI_5          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_10/XLXI_5   |
+| +++XLXI_6          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_10/XLXI_6   |
+| +++XLXI_7          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_10/XLXI_7   |
+| +++XLXI_8          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_10/XLXI_8   |
+| +++XLXI_9          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_10/XLXI_9   |
+| ++XLXI_11          |           | 0/16          | 0/0           | 0/16          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_11          |
+| +++XLXI_2          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_11/XLXI_2   |
+| +++XLXI_3          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_11/XLXI_3   |
+| +++XLXI_4          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_11/XLXI_4   |
+| +++XLXI_5          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_11/XLXI_5   |
+| +++XLXI_6          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_11/XLXI_6   |
+| +++XLXI_7          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_11/XLXI_7   |
+| +++XLXI_8          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_11/XLXI_8   |
+| +++XLXI_9          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_11/XLXI_9   |
+| ++XLXI_12          |           | 0/16          | 0/0           | 0/16          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_12          |
+| +++XLXI_2          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_12/XLXI_2   |
+| +++XLXI_3          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_12/XLXI_3   |
+| +++XLXI_4          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_12/XLXI_4   |
+| +++XLXI_5          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_12/XLXI_5   |
+| +++XLXI_6          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_12/XLXI_6   |
+| +++XLXI_7          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_12/XLXI_7   |
+| +++XLXI_8          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_12/XLXI_8   |
+| +++XLXI_9          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_12/XLXI_9   |
+| ++XLXI_9           |           | 0/16          | 0/0           | 0/16          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_9           |
+| +++XLXI_2          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_9/XLXI_2    |
+| +++XLXI_3          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_9/XLXI_3    |
+| +++XLXI_4          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_9/XLXI_4    |
+| +++XLXI_5          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_9/XLXI_5    |
+| +++XLXI_6          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_9/XLXI_6    |
+| +++XLXI_7          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_9/XLXI_7    |
+| +++XLXI_8          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_9/XLXI_8    |
+| +++XLXI_9          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_3/XLXI_9/XLXI_9    |
+| +XLXI_4            |           | 0/31          | 0/0           | 0/31          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_4                  |
+| ++XLXI_1           |           | 3/3           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_4/XLXI_1           |
+| ++XLXI_2           |           | 4/4           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_4/XLXI_2           |
+| ++XLXI_3           |           | 4/4           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_4/XLXI_3           |
+| ++XLXI_4           |           | 4/4           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_4/XLXI_4           |
+| ++XLXI_5           |           | 4/4           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_4/XLXI_5           |
+| ++XLXI_6           |           | 4/4           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_4/XLXI_6           |
+| ++XLXI_7           |           | 4/4           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_4/XLXI_7           |
+| ++XLXI_8           |           | 4/4           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_4/XLXI_8           |
+| +XLXI_9            |           | 1/33          | 0/0           | 1/37          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_9                  |
+| ++XLXI_1           |           | 6/8           | 0/0           | 6/9           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_9/XLXI_1           |
+| +++XLXI_20         |           | 2/2           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_9/XLXI_1/XLXI_20   |
+| ++XLXI_2           |           | 6/8           | 0/0           | 6/9           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_9/XLXI_2           |
+| +++XLXI_20         |           | 2/2           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_9/XLXI_2/XLXI_20   |
+| ++XLXI_3           |           | 6/8           | 0/0           | 6/9           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_9/XLXI_3           |
+| +++XLXI_20         |           | 2/2           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_9/XLXI_3/XLXI_20   |
+| ++XLXI_4           |           | 6/8           | 0/0           | 6/9           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_9/XLXI_4           |
+| +++XLXI_20         |           | 2/2           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | alu_32/XLXI_9/XLXI_4/XLXI_20   |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Slices can be packed with basic elements from multiple hierarchies.
+  Therefore, a slice will be counted in every hierarchical module
+  that each of its packed basic elements belong to.
+** For each column, there are two numbers reported <A>/<B>.
+   <A> is the number of elements that belong to that specific hierarchical module.
+   <B> is the total number of elements from that hierarchical module and any lower level
+   hierarchical modules below.
+*** The LUTRAM column counts all LUTs used as memory including RAM, ROM, and shift registers.
